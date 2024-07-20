@@ -1,0 +1,33 @@
+/* Reset default margin and padding */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flexbox layout for main container */
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure page takes at least full viewport height */
+}
+
+/* Content wrapper to push footer to bottom */
+#content-wrap {
+    flex: 1; /* Grow to fill remaining space */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #343a40; /* Dark background color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    /* Add other styles like width, height, and background color */
+  }
